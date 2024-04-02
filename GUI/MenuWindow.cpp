@@ -4,7 +4,17 @@
 
 #include "MenuWindow.hpp"
 
-void MenuWindow::prepareScreen()
+void MenuWindow::startScreen()
 {
-    system("cls");
+    changeTextColor(textColors::PINK);
+    std::cout<<mainMenuTexts::title<<std::endl;
+}
+
+void MenuWindow::adjustWindow(const int &width, const int &height)
+{
+    HWND console = GetConsoleWindow();
+    RECT ConsoleRect;
+    GetWindowRect(console, &ConsoleRect);
+
+    MoveWindow(console, ConsoleRect.left, ConsoleRect.top, width, height, TRUE);
 }

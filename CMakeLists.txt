@@ -8,4 +8,9 @@ add_executable(AstroKeeper main.cpp
         GUI/HelpTexts.hpp
         GUI/MenuWindow.cpp
         GUI/MenuWindow.hpp
+        Logic/GameController.cpp
+        Logic/GameController.hpp
+        Logic/Config.hpp
+        Logic/TextNamespaces.hpp
+        Globals.hpp
 )

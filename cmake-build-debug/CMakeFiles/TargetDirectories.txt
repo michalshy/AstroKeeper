@@ -1,3 +1,0 @@
-C:/Users/Michin/CLionProjects/AstroKeeper/cmake-build-debug/CMakeFiles/AstroKeeper.dir
-C:/Users/Michin/CLionProjects/AstroKeeper/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Users/Michin/CLionProjects/AstroKeeper/cmake-build-debug/CMakeFiles/rebuild_cache.dir

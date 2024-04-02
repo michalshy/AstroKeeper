@@ -4,6 +4,7 @@
 
 #include <windows.h>
 #include <iostream>
+#include <thread>
 #include "TextNamespaces.hpp"
 #include "../Globals.hpp"
 
@@ -16,6 +17,14 @@
 static void changeTextColor(int color)
 {
     SetConsoleTextAttribute(cmd::h, color);
+}
+
+static void typeWriteMessage(std::string& s, int time)
+{
+    for (const auto c : s) {
+        std::cout << c << std::flush;
+        std::this_thread::sleep_for(std::chrono::milliseconds(time));
+    }
 }
 
 #endif //ASTROKEEPER_CONFIG_HPP

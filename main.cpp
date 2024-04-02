@@ -4,8 +4,7 @@
 #include "Logic/GameController.hpp"
 #include "Logic/Config.hpp"
 #include <windows.h>
-
-
+#include <thread>
 
 
 int main(int argc, char** argv) {

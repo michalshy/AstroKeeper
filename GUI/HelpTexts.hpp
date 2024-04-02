@@ -6,6 +6,9 @@
 #ifndef ASTROKEEPER_HELPTEXTS_HPP
 #define ASTROKEEPER_HELPTEXTS_HPP
 
-const static std::string paramError = "No params needed! Try again";
+namespace debugTexts
+{
+    const static std::string paramError = "No params needed! Try again";
+}
 
 #endif //ASTROKEEPER_HELPTEXTS_HPP

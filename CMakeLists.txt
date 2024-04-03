@@ -10,7 +10,11 @@ add_executable(AstroKeeper main.cpp
         GUI/MenuWindow.hpp
         Logic/GameController.cpp
         Logic/GameController.hpp
-        Logic/Config.hpp
+        Logic/ConfigTexts.hpp
         Logic/TextNamespaces.hpp
         Globals.hpp
+        Engine/GameEngine.cpp
+        Engine/GameEngine.hpp
+        Engine/GraphicEngine.cpp
+        Engine/GraphicEngine.hpp
 )

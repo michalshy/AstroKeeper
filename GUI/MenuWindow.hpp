@@ -6,7 +6,9 @@
 #include <iostream>
 #include <Windows.h>
 #include "HelpTexts.hpp"
-#include "../Logic/Config.hpp"
+#include "../Logic/ConfigTexts.hpp"
+#include "../Globals.hpp"
+#include "../Engine/GraphicEngine.hpp"
 
 #ifndef ASTROKEEPER_MENUWINDOW_HPP
 #define ASTROKEEPER_MENUWINDOW_HPP
@@ -14,10 +16,11 @@
 
 class MenuWindow {
 private:
-
+    GraphicEngine* engine = nullptr;
 public:
+    MenuWindow(GraphicEngine* _engine);
+
     void startScreen();
-    void adjustWindow(const int &width, const int &height);
 
 };
 

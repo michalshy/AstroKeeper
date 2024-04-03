@@ -3,16 +3,22 @@
 //
 
 #include "GameController.hpp"
-GameController::GameController(MenuWindow &menuWindow)
+GameController::GameController(MenuWindow* _menu, GameEngine* _engine)
 {
-    menu = &menuWindow;
+    menu = _menu;
+    engine = _engine;
 }
 void GameController::startGame()
 {
     while (isInMenu)
     {
-        menu->adjustWindow(800,600);
         menu->startScreen();
-        std::cin.get();
+
+
+        if(GetAsyncKeyState(VK_DOWN) < 0)
+        {
+            std::cout<<"exit";
+            break;
+        }
     }
 }

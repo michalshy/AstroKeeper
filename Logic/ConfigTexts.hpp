@@ -5,6 +5,7 @@
 #include <windows.h>
 #include <iostream>
 #include <thread>
+#include <iomanip>
 #include "TextNamespaces.hpp"
 #include "../Globals.hpp"
 
@@ -13,10 +14,9 @@
 #define ASTROKEEPER_CONFIG_HPP
 
 
-
 static void changeTextColor(int color)
 {
-    SetConsoleTextAttribute(cmd::h, color);
+    SetConsoleTextAttribute(cmd::hOutput, color);
 }
 
 static void typeWriteMessage(std::string& s, int time)

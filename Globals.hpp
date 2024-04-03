@@ -8,7 +8,8 @@
 
 namespace cmd
 {
-    static HANDLE h = GetStdHandle(STD_OUTPUT_HANDLE);
+    static HANDLE hOutput = GetStdHandle(STD_OUTPUT_HANDLE);
+    static HANDLE hInput = GetStdHandle(STD_INPUT_HANDLE);
 }
 
 
